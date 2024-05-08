@@ -1,0 +1,111 @@
+body{
+   background-color: aliceblue;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.container{
+    display: block;
+    border: 2px outset;
+    position: relative;
+    top: 250px;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+}
+h1{
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+}
+h1::after{
+   content: '';
+   width: 75px;
+   height: 3px;
+   border-radius: 3px;
+   background-color: rgb(23, 124, 229);
+   position: absolute;
+   bottom: -10px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+p{
+    
+    float: right;
+}
+p::before{
+    content: '';
+   width: 25px;
+   height: 1px;
+   border-radius: 3px;
+   background-color: rgb(23, 124, 229);
+   position: absolute;
+   bottom:17%;
+   left: 87.5%;
+   transform: translateX(-50%);
+}
+blockquote{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.buttons{
+    text-align: center;
+    margin-left: 50px;
+  }
+.buttons button{
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 10px;
+    width: 120px;
+    border-radius: 20px;
+    background-color: rgb(23, 124, 229);;
+    border: none;
+}
+#btn{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1rem;
+    transition: background-color,0.5s;
+}
+#share{
+    background: transparent;
+    border: 2px solid rgb(23, 124, 229);
+    /* margin-left: 120px; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1rem;
+    transition: background-color,0.5s;
+ }
+#share:hover{
+    background-color: rgb(23, 124, 229);
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1rem;
+}
+#btn:hover{
+    background-color:rgb(26, 190, 245);
+}
+#saving{
+    display: none;
+    position: relative;
+    left: 10px;
+    cursor: pointer;
+}
+ul{
+    border: 2px outset;
+    float: right;
+    background-color: rgb(0, 225, 255);
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+}
+#liking{
+    display: none;
+    position: relative;
+    left:90px;
+    cursor: pointer;
+
+}
+
+
+
+
