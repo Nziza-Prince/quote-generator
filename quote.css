@@ -1,111 +1,148 @@
-body{
-   background-color: aliceblue;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+body {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
 }
-.container{
+
+.container {
     display: block;
     border: 2px outset;
-    position: relative;
-    top: 250px;
     background-color: white;
     text-align: center;
     padding: 20px;
+    width: 80%;
+    margin-bottom: 20px;
 }
-h1{
+
+h1 {
     font-size: 32px;
     margin-bottom: 40px;
     position: relative;
 }
-h1::after{
-   content: '';
-   width: 75px;
-   height: 3px;
-   border-radius: 3px;
-   background-color: rgb(23, 124, 229);
-   position: absolute;
-   bottom: -10px;
-   left: 50%;
-   transform: translateX(-50%);
+
+h1::after {
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: rgb(23, 124, 229);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
-p{
-    
+
+p {
     float: right;
 }
-p::before{
+
+p::before {
     content: '';
-   width: 25px;
-   height: 1px;
-   border-radius: 3px;
-   background-color: rgb(23, 124, 229);
-   position: absolute;
-   bottom:17%;
-   left: 87.5%;
-   transform: translateX(-50%);
+    width: 25px;
+    height: 1px;
+    border-radius: 3px;
+    background-color: rgb(23, 124, 229);
+    position: absolute;
+    bottom: 17%;
+    left: 87.5%;
+    transform: translateX(-50%);
 }
-blockquote{
+
+blockquote {
     font-size: 2rem;
     margin-bottom: 20px;
 }
 
-.buttons{
+.buttons {
     text-align: center;
     margin-left: 50px;
-  }
-.buttons button{
+}
+
+.buttons button {
     margin-top: 20px;
     cursor: pointer;
     padding: 10px;
     width: 120px;
     border-radius: 20px;
-    background-color: rgb(23, 124, 229);;
+    background-color: rgb(23, 124, 229);
     border: none;
 }
-#btn{
+
+#btn {
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1rem;
-    transition: background-color,0.5s;
+    transition: background-color 0.5s;
 }
-#share{
+
+#share, #view-saved, #view-liked {
     background: transparent;
     border: 2px solid rgb(23, 124, 229);
-    /* margin-left: 120px; */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1rem;
-    transition: background-color,0.5s;
- }
-#share:hover{
+    transition: background-color 0.5s;
+}
+
+#share:hover, #view-saved:hover, #view-liked:hover {
     background-color: rgb(23, 124, 229);
     color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1rem;
+    cursor: pointer;
 }
-#btn:hover{
-    background-color:rgb(26, 190, 245);
+#btn:hover {
+    background-color: rgb(26, 190, 245);
 }
-#saving{
+
+#saving {
     display: none;
     position: relative;
     left: 10px;
     cursor: pointer;
 }
-ul{
-    border: 2px outset;
-    float: right;
-    background-color: rgb(0, 225, 255);
-    color: rgb(255, 255, 255);
-    font-size: 1.5rem;
-}
-#liking{
+
+#liking {
     display: none;
     position: relative;
-    left:90px;
+    left: 90px;
     cursor: pointer;
-
 }
 
+.view-buttons {
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
 
+.view-buttons button {
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 10px;
+    width: 120px;
+    border-radius: 20px;
+    background-color: rgb(23, 124, 229);
+    border: none;
+}
 
+.quotes-container {
+    display: none;
+    border: 2px outset;
+    background-color: white;
+    text-align: left;
+    padding: 20px;
+    width: 80%;
+    margin-bottom: 20px;
+}
 
+.quotes-container h2 {
+    text-align: center;
+}
+
+.quotes-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.quotes-container ul li {
+    margin-bottom: 10px;
+}
